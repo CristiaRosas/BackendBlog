@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "title": "COPEREX",
+  "description": "Tarea de taller",
+  "course": {
+    "$oid": "6824a23fcd5bd275ef915235"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-14T14:03:53.458Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:03:53.458Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824a2e4cd5bd275ef91524e"
+  },
+  "title": "Almacenadora",
+  "description": "Tarea de practicas",
+  "course": {
+    "$oid": "6824a256cd5bd275ef915239"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-14T14:04:20.230Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:04:20.230Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824a2f0cd5bd275ef915252"
+  },
+  "title": "Blog de aprendizaje",
+  "description": "Tarea de tecnologia muy extensa",
+  "course": {
+    "$oid": "6824a24ccd5bd275ef915237"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-14T14:04:32.880Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:05:54.709Z"
+  }
+}]

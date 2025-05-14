@@ -1,0 +1,51 @@
+[{
+  "_id": {
+    "$oid": "6824a357cd5bd275ef91526d"
+  },
+  "author": "Jonathan",
+  "comment": "Mi equipo fue un fraude",
+  "publication": {
+    "$oid": "6824a2e4cd5bd275ef91524e"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-14T14:06:15.681Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:06:15.681Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824a387cd5bd275ef915278"
+  },
+  "author": "Chepe",
+  "comment": "Mi equipo debuto",
+  "publication": {
+    "$oid": "6824a2e4cd5bd275ef91524e"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-14T14:07:03.426Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:08:29.460Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824a3bbcd5bd275ef915289"
+  },
+  "author": "Crosas",
+  "comment": "me costo mucho entender el fronted",
+  "publication": {
+    "$oid": "6824a2e4cd5bd275ef91524e"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-14T14:07:55.308Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-14T14:08:15.990Z"
+  }
+}]

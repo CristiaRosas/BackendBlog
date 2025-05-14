@@ -1,0 +1,517 @@
+{
+	"info": {
+		"_postman_id": "9de29d49-42c0-4362-8419-3c93d9da3fb3",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413747"
+	},
+	"item": [
+		{
+			"name": "publications",
+			"item": [
+				{
+					"name": "postPublication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"blog\",\r\n    \"description\": \"Tarea de taller\",\r\n    \"course\": [\"taller\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/postPublication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"postPublication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/getPublications?limite=10&desde=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublications"
+							],
+							"query": [
+								{
+									"key": "limite",
+									"value": "10"
+								},
+								{
+									"key": "desde",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublicationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/getPublicationById/6824a2c9cd5bd275ef91524a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublicationById",
+								"6824a2c9cd5bd275ef91524a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublicationByTitle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/getPublicationByTitle/COPEREX",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublicationByTitle",
+								"COPEREX"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putPublication",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Blog de aprendizaje\",\r\n    \"description\": \"Tarea de tecnologia muy extensa\",\r\n    \"course\": [\"tecnologia\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/putPublication/6824a2f0cd5bd275ef915252",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"putPublication",
+								"6824a2f0cd5bd275ef915252"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePublication",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/publications/deletePublication/6824a2f0cd5bd275ef915252",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"deletePublication",
+								"6824a2f0cd5bd275ef915252"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "courses",
+			"item": [
+				{
+					"name": "postCourse",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ingles\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/postCourse",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"postCourse"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/getCourses?limite=10&desde=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"getCourses"
+							],
+							"query": [
+								{
+									"key": "limite",
+									"value": "10"
+								},
+								{
+									"key": "desde",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourseById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/getCourseById/6824a23fcd5bd275ef915235",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"getCourseById",
+								"6824a23fcd5bd275ef915235"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCourseByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/getCourseByName/ingles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"getCourseByName",
+								"ingles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putCourse",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"practicas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/putCourse/6824a256cd5bd275ef915239",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"putCourse",
+								"6824a256cd5bd275ef915239"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteCourse",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/courses/deleteCourse/6824a256cd5bd275ef915239",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"courses",
+								"deleteCourse",
+								"6824a256cd5bd275ef915239"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "postComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"cristian\",\r\n    \"comment\": \"me costo pero hice COPEREX\",\r\n    \"publication\": \"COPEREX\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/postComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"postComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getComments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/getComments?limite=10&desde=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getComments"
+							],
+							"query": [
+								{
+									"key": "limite",
+									"value": "10"
+								},
+								{
+									"key": "desde",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/getCommentById/6824a357cd5bd275ef91526d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getCommentById",
+								"6824a357cd5bd275ef91526d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentByPublication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/getCommentByPublication/Almacenadora",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getCommentByPublication",
+								"Almacenadora"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putComment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"author\": \"Crosas\",\r\n    \"comment\": \"me costo mucho entender el fronted\",\r\n    \"publication\": \"Almacenadora\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/putComment/6824a3bbcd5bd275ef915289",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"putComment",
+								"6824a3bbcd5bd275ef915289"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3006/blog/v1/comments/deleteComment/6824a387cd5bd275ef915278",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3006",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"deleteComment",
+								"6824a387cd5bd275ef915278"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
