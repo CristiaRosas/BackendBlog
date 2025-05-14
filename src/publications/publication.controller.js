@@ -19,13 +19,13 @@ export const postPublication = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: 'Publication saved successfully!',
+            message: 'Publicación guardada exitosamente!',
             publication
         })
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Error saving publication!',
+            message: 'Error al guardar la publicación!',
             error
         })
     }
@@ -46,7 +46,7 @@ export const getPublications = async (req = request, res = response) => {
 
         res.status(200).json({
             success: true,
-            message: 'Publications found!',
+            message: 'Publicaciones encontradas!',
             total,
             publications
         })
@@ -54,7 +54,7 @@ export const getPublications = async (req = request, res = response) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting publications!',
+            msg: 'Error al obtener publicaciones!',
             error
         })
     }
@@ -68,14 +68,14 @@ export const getPublicationById = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: 'Publication found!',
+            message: 'Publicación encontrada!',
             publication
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting publication!',
+            msg: 'Error al obtener la publicación!',
             error
         })
     }
@@ -90,7 +90,7 @@ export const getPublicationByTitle = async (req, res) => {
         if (!publication) {
             return res.status(404).json({
                 success: false,
-                msg: 'Publication not found!'
+                msg: 'Publicación no encontrada!'
             });
         }
 
@@ -103,7 +103,7 @@ export const getPublicationByTitle = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting publication!',
+            msg: 'Error al obtener la publicación!',
             error: error.message
         });
     }
@@ -118,7 +118,7 @@ export const getPublicationsByCourseName = async (req, res) => {
         if (!course) {
             return res.status(404).json({
                 success: false,
-                msg: 'Course not found!'
+                msg: 'Curso no encontrado!'
             });
         }
 
@@ -126,14 +126,14 @@ export const getPublicationsByCourseName = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Publications found!',
+            msg: 'Publicaciones encontradas!',
             publications
         });
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting publications!',
+            msg: 'Error al obtener publicaciones!',
             error: error.message
         });
     }
@@ -153,14 +153,14 @@ export const putPublication = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Publication update!',
+            msg: 'Actualización de la publicación!',
             publication
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error update!',
+            msg: 'Actualización de errores!',
             error
         })
     }
@@ -175,14 +175,14 @@ export const deletePublication = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Deactivate publication!',
+            msg: 'Desactivar publicación!',
             publication,
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Deactivate error!',
+            msg: 'Desactivar error!',
             error
         })
     }

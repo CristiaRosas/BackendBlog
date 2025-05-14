@@ -18,13 +18,13 @@ export const postComment = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: 'Comment saved successfully!',
+            message: 'Comentario guardado exitosamente!',
             comment
         })
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Error saving comment!',
+            message: 'Error al guardar comentario!',
             error
         })
     }
@@ -45,7 +45,7 @@ export const getComments = async (req = request, res = response) => {
 
         res.status(200).json({
             success: true,
-            message: 'Comments found!',
+            message: 'Comentarios encontrados!',
             total,
             comments
         })
@@ -53,7 +53,7 @@ export const getComments = async (req = request, res = response) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting comments!',
+            msg: 'Error al obtener comentarios!',
             error
         })
     }
@@ -68,20 +68,20 @@ export const getCommentById = async (req, res) => {
         if (!comment) {
             return res.status(404).json({
                 success: false,
-                msg: 'Comment not found!'
+                msg: 'Comentario no encontrado!'
             })
         }
 
         res.status(200).json({
             success: true,
-            message: 'Comment found!',
+            message: 'Comentario encontrado!',
             comment
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting comment!',
+            msg: 'Error al recibir el comentario!',
             error
         })
     }
@@ -97,14 +97,14 @@ export const getCommentByPublication = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: 'Comment found!',
+            message: 'Comentario encontrado!',
             comments
         });
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting comments for the publication!',
+            msg: 'Error al obtener comentarios para la publicación!',
             error: error.message
         });
     }
@@ -124,14 +124,14 @@ export const putComment = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Comment update!',
+            msg: 'Actualización de comentarios!',
             comment
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error update!',
+            msg: 'Actualización de errores!',
             error
         })
     }
@@ -147,14 +147,14 @@ export const deleteComment = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Deactivate comment!',
+            msg: 'Desactivar comentario!',
             comment,
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Deactivate error!',
+            msg: 'Desactivar error!',
             error
         })
     }

@@ -11,13 +11,13 @@ export const postCourse = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: 'Course saved successfully!',
+            message: 'Curso guardado exitosamente!',
             course
         })
     } catch (error) {
         res.status(500).json({
             success: false,
-            message: 'Error saving course!',
+            message: 'Error al guardar el curso!',
             error
         })
     }
@@ -44,7 +44,7 @@ export const getCourses = async (req = request, res = response) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting courses!',
+            msg: 'Error al obtener cursos!',
             error
         })
     }
@@ -59,7 +59,7 @@ export const getCourseById = async (req, res) => {
         if (!course) {
             return res.status(404).json({
                 success: false,
-                msg: 'Course not found!'
+                msg: 'Curso no encontrado!'
             })
         }
 
@@ -71,7 +71,7 @@ export const getCourseById = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting course!',
+            msg: 'Error al obtener el curso!',
             error
         })
     }
@@ -86,7 +86,7 @@ export const getCourseByName = async (req, res) => {
         if (!course) {
             return res.status(404).json({
                 success: false,
-                msg: 'Course not found!'
+                msg: 'Curso no encontrado!'
             });
         }
 
@@ -98,7 +98,7 @@ export const getCourseByName = async (req, res) => {
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error getting course!',
+            msg: 'Error al obtener el curso!',
             error: error.message
         });
     }
@@ -114,14 +114,14 @@ export const putCourse = async (req, res = response) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Course update!',
+            msg: 'Actualización del curso!',
             course
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Error update!',
+            msg: 'Actualización de errores!',
             error
         })
     }
@@ -137,15 +137,45 @@ export const deleteCourse = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Deactivate course!',
+            msg: 'Desactivar curso!',
             course,
         })
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Deactivate error!',
+            msg: 'Desactivar error!',
             error
         })
     }
 }
+
+const createCoursesD = async (name, description, status) => {
+    try {
+        if(name === "Taller III" || name === "Tecnologia III" || name === "Practica Supervisada"){
+            const existCourse = await Course.findOne({ name: "Taller III" || "Tecnologia III" });
+            if(existCourse){
+                console.log(`el curso ${name} ya existen.`);
+                return null;
+            };
+        };
+        const newCourse = new Course({
+            name,
+            description,
+            status
+        });
+ 
+        await newCourse.save();
+        console.log("Curso creado exitosamente: ", newCourse);
+        return newCourse;
+ 
+    } catch (error) {
+        console.error("Error en el curso creado", error);
+        return null;
+    }
+}
+ 
+createCoursesD("Taller III",  true);
+createCoursesD("Tecnologia III",  true);
+createCoursesD("Practica Supervisada", true);
+ 
