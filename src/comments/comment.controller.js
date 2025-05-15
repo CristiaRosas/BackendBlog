@@ -6,29 +6,40 @@ export const postComment = async (req, res) => {
     try {
         const data = req.body;
 
+        // Si no se proporciona el autor, asignar "Anonymous"
+        if (!data.author || data.author.trim() === '') {
+            data.author = 'Anonymous';
+        }
+
         const maping = await Publication.findOne({ title: data.publication });
+
+        if (!maping) {
+            return res.status(404).json({
+                success: false,
+                message: 'Publicación no encontrada!',
+            });
+        }
 
         data.publication = maping._id;
 
         const comment = new Comment(data);
 
         await comment.save();
-        
-        await comment.populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}})
+        await comment.populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}});
 
         res.status(200).json({
             success: true,
             message: 'Comentario guardado exitosamente!',
             comment
-        })
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
             message: 'Error al guardar comentario!',
             error
-        })
+        });
     }
-}
+};
 
 export const getComments = async (req = request, res = response) => {
     try {

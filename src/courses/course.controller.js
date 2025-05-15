@@ -150,7 +150,7 @@ export const deleteCourse = async (req, res) => {
     }
 }
 
-const createCoursesD = async (name, description, status) => {
+/* const createCoursesD = async (name, description, status) => {
     try {
         if(name === "Taller III" || name === "Tecnologia III" || name === "Practica Supervisada"){
             const existCourse = await Course.findOne({ name: "Taller III" || "Tecnologia III" });
@@ -178,4 +178,4 @@ const createCoursesD = async (name, description, status) => {
 createCoursesD("Taller III",  true);
 createCoursesD("Tecnologia III",  true);
 createCoursesD("Practica Supervisada", true);
- 
+  */

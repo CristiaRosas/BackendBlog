@@ -3,8 +3,9 @@ import  { Schema, model } from 'mongoose';
 const commentSchema = new Schema({
     author: {
         type: String,
-        required: [true, 'Author is required'],
+        required: false,
         maxLength: [100, "Max length is 100 characters"],
+        default: 'Anonymous'
     },
     
     comment: {
