@@ -41,11 +41,62 @@
   "course": {
     "$oid": "6824a24ccd5bd275ef915237"
   },
-  "status": false,
+  "status": true,
   "createdAt": {
     "$date": "2025-05-14T14:04:32.880Z"
   },
   "updatedAt": {
     "$date": "2025-05-14T14:05:54.709Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b7996c687e46192bbf03"
+  },
+  "title": "Mejor profesor de ingles",
+  "description": "marco tulio good ",
+  "course": {
+    "$oid": "6826b7576c687e46192bbf00"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:57:13.441Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:57:13.441Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b8566c687e46192bbf0c"
+  },
+  "title": "ceferino rodrigez",
+  "description": "mi mayor ejemplo de perseverancia y pasion a su trabajo",
+  "course": {
+    "$oid": "6826b8236c687e46192bbf09"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T04:00:22.910Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T04:00:22.910Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b8f06c687e46192bbf1c"
+  },
+  "title": "colisiones",
+  "description": "no le entendi xd",
+  "course": {
+    "$oid": "6826b8d66c687e46192bbf19"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T04:02:56.348Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T04:02:56.348Z"
   }
 }]

@@ -36,4 +36,43 @@
   "updatedAt": {
     "$date": "2025-05-14T14:03:06.922Z"
   }
+},
+{
+  "_id": {
+    "$oid": "6826b7576c687e46192bbf00"
+  },
+  "name": "ingles",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:56:07.743Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:56:07.743Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b8236c687e46192bbf09"
+  },
+  "name": "matematica",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T03:59:31.395Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T03:59:31.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6826b8d66c687e46192bbf19"
+  },
+  "name": "fisica",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-16T04:02:30.328Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-16T04:02:30.328Z"
+  }
 }]

@@ -1,8 +1,9 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { postPublication, getPublications, getPublicationById, getPublicationByTitle, putPublication, deletePublication } from "./publication.controller.js";
-import { idPublicationValid, titlePublicationValid } from "../helpers/db-validator.js";
+import { postPublication, getPublications, getPublicationById, getPublicationByTitle, getPublicationsByCourseName ,putPublication, deletePublication } from "./publication.controller.js";
+import { idPublicationValid, nameCourseValid, titlePublicationValid } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
+
 
 const router = Router();
 
@@ -34,6 +35,15 @@ router.get(
         validarCampos
     ],
     getPublicationByTitle
+)
+
+router.get(
+    "/getPublicationsByCourseName/:name",
+    [
+        check("name").custom(nameCourseValid),
+        validarCampos
+    ],
+    getPublicationsByCourseName
 )
 
 router.put(
