@@ -12,7 +12,7 @@
     "$date": "2025-05-14T14:06:15.681Z"
   },
   "updatedAt": {
-    "$date": "2025-05-14T14:06:15.681Z"
+    "$date": "2025-05-17T04:44:49.202Z"
   }
 },
 {
@@ -24,7 +24,7 @@
   "publication": {
     "$oid": "6824a2e4cd5bd275ef91524e"
   },
-  "status": false,
+  "status": true,
   "createdAt": {
     "$date": "2025-05-14T14:07:03.426Z"
   },
@@ -37,7 +37,7 @@
     "$oid": "6824a3bbcd5bd275ef915289"
   },
   "author": "Crosas",
-  "comment": "me costo mucho entender el fronted",
+  "comment": "hola",
   "publication": {
     "$oid": "6824a2e4cd5bd275ef91524e"
   },
@@ -46,7 +46,7 @@
     "$date": "2025-05-14T14:07:55.308Z"
   },
   "updatedAt": {
-    "$date": "2025-05-14T14:08:15.990Z"
+    "$date": "2025-05-19T01:54:06.283Z"
   }
 },
 {
@@ -54,7 +54,7 @@
     "$oid": "6826a2fc09fbe8edd2cf8347"
   },
   "author": "Anonymous",
-  "comment": "Muy buena tarea, hicimos reportes con excel",
+  "comment": "hola",
   "publication": {
     "$oid": "6824a2c9cd5bd275ef91524a"
   },
@@ -63,6 +63,125 @@
     "$date": "2025-05-16T02:29:16.525Z"
   },
   "updatedAt": {
-    "$date": "2025-05-16T02:29:16.525Z"
+    "$date": "2025-05-19T01:54:00.699Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68280b39ef234d0766a9fb98"
+  },
+  "author": "Anonymous",
+  "comment": "pepa es muy rogado para darme datos",
+  "publication": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-17T04:06:17.836Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T04:06:17.836Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68281462ef234d0766a9fc8a"
+  },
+  "author": "Peralta",
+  "comment": "no doy datos a rosas por nada del mundo xd",
+  "publication": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-17T04:45:22.780Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T04:46:02.491Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68281e7a445808941483ff9a"
+  },
+  "author": "Prueba",
+  "comment": "hola",
+  "publication": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-05-17T05:28:26.216Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T02:00:20.266Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682824ff445808941484004e"
+  },
+  "author": "Jeremy",
+  "comment": "me costaron los reportes",
+  "publication": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-17T05:56:15.086Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T05:56:15.086Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682825d1445808941484007f"
+  },
+  "author": "Mandril",
+  "comment": "me costo mucho el blog",
+  "publication": {
+    "$oid": "6824a2f0cd5bd275ef915252"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-17T05:59:45.305Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-17T05:59:45.305Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682a8cd9e8823db7ca6ebf72"
+  },
+  "author": "Juan",
+  "comment": "prueba final",
+  "publication": {
+    "$oid": "6824a2c9cd5bd275ef91524a"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-19T01:43:53.420Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T01:43:53.420Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682a8fb106bd9eddfd4b35af"
+  },
+  "author": "Anonymous",
+  "comment": "mojarra",
+  "publication": {
+    "$oid": "6826b7996c687e46192bbf03"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-19T01:56:01.283Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T01:56:18.845Z"
   }
 }]

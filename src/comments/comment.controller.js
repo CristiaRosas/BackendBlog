@@ -6,7 +6,6 @@ export const postComment = async (req, res) => {
     try {
         const data = req.body;
 
-        // Si no se proporciona el autor, asignar "Anonymous"
         if (!data.author || data.author.trim() === '') {
             data.author = 'Anonymous';
         }
@@ -123,30 +122,44 @@ export const getCommentByPublication = async (req, res) => {
 
 export const putComment = async (req, res = response) => {
     try {
-
         const { id } = req.params;
         const data = req.body;
 
-        const maping = await Publication.findOne({ title: data.publication });
+        if (data.publication) {
+            const maping = await Publication.findOne({ title: data.publication });
+            if (!maping) {
+                return res.status(404).json({
+                    success: false,
+                    message: 'Publicación no encontrada!',
+                });
+            }
+            data.publication = maping._id;
+        } else {
+            delete data.publication; 
+        }
 
-        data.publication = maping._id;
-
-        const comment = await Comment.findByIdAndUpdate(id, data, { new: true }).populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}});
+        const comment = await Comment.findByIdAndUpdate(id, data, { new: true })
+            .populate({
+                path: 'publication',
+                select: 'title',
+                populate: { path: 'course', select: 'name' }
+            });
 
         res.status(200).json({
             success: true,
             msg: 'Actualización de comentarios!',
             comment
-        })
+        });
 
     } catch (error) {
         res.status(500).json({
             success: false,
-            msg: 'Actualización de errores!',
-            error
-        })
+            msg: 'Error en la actualización del comentario!',
+            error: error.message 
+        });
     }
-}
+};
+
 
 export const deleteComment = async (req, res) => {
     try {
